@@ -1,0 +1,93 @@
+/*
+ * Faytuks Network typography (Brand System v2.0)
+ *
+ * Display / headings : Onest           (free stand-in for Object Sans, SIL OFL 1.1)
+ * Body               : Inter           (SIL OFL 1.1)
+ * Labels / data      : JetBrains Mono  (SIL OFL 1.1)
+ *
+ * The font paths are relative to this file. Keep the folder layout when you copy it.
+ */
+
+/* ---------- Font faces ---------- */
+
+@font-face {
+  font-family: "Onest";
+  src: url("onest/Onest-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("inter/InterVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("inter/InterVariable-Italic.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("jetbrains-mono/JetBrainsMono-Variable.woff2") format("woff2");
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("jetbrains-mono/JetBrainsMono-Variable-Italic.woff2") format("woff2");
+  font-weight: 100 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ---------- Tokens ---------- */
+
+:root {
+  --font-display: "Onest", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* size / line-height pairs, from the v2.0 type scale */
+  --text-display-hero: 72px;  --leading-display-hero: 76px;
+  --text-display-xl:   56px;  --leading-display-xl:   60px;
+  --text-h1:           48px;  --leading-h1:           50px;
+  --text-h2:           40px;  --leading-h2:           42px;
+  --text-h3:           32px;  --leading-h3:           32px;
+  --text-h4:           24px;  --leading-h4:           24px;
+  --text-label-xl:     20px;  --leading-label-xl:     28px;
+  --text-label-lg:     16px;  --leading-label-lg:     24px;
+  --text-label-md:     14px;  --leading-label-md:     20px;
+  --text-label-sm:     12px;  --leading-label-sm:     16px;
+  --text-body-xl:      18px;  --leading-body-xl:      28px;
+  --text-body-lg:      16px;  --leading-body-lg:      20px;
+  --text-body-md:      14px;  --leading-body-md:      16px;
+}
+
+/* ---------- Styles ---------- */
+/* Sizes and line-heights come from the guide. Weights and letter-spacing are read off the sheet by eye. */
+
+.text-display-hero { font: 700 var(--text-display-hero)/var(--leading-display-hero) var(--font-display); letter-spacing: -0.03em; }
+.text-display-xl   { font: 700 var(--text-display-xl)/var(--leading-display-xl) var(--font-display);     letter-spacing: -0.03em; }
+.text-h1           { font: 700 var(--text-h1)/var(--leading-h1) var(--font-display);                     letter-spacing: -0.025em; }
+.text-h2           { font: 700 var(--text-h2)/var(--leading-h2) var(--font-display);                     letter-spacing: -0.02em; }
+.text-h3           { font: 500 var(--text-h3)/var(--leading-h3) var(--font-display);                     letter-spacing: -0.015em; }
+.text-h4           { font: 500 var(--text-h4)/var(--leading-h4) var(--font-display);                     letter-spacing: -0.015em; }
+
+.text-label-xl     { font: 700 var(--text-label-xl)/var(--leading-label-xl) var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; }
+.text-label-lg     { font: 600 var(--text-label-lg)/var(--leading-label-lg) var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; }
+.text-label-md     { font: 500 var(--text-label-md)/var(--leading-label-md) var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase; }
+.text-label-sm     { font: 500 var(--text-label-sm)/var(--leading-label-sm) var(--font-mono); letter-spacing: 0.04em; text-transform: uppercase; }
+
+.text-body-xl      { font: 400 var(--text-body-xl)/var(--leading-body-xl) var(--font-body); }
+.text-body-lg      { font: 400 var(--text-body-lg)/var(--leading-body-lg) var(--font-body); }
+.text-body-md      { font: 400 var(--text-body-md)/var(--leading-body-md) var(--font-body); }

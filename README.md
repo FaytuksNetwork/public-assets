@@ -11,6 +11,7 @@ This repository is the single source of truth for all Faytuks Network assets. If
 /banners        : Banners for social media and the website
 /icons          : Favicons and app icons
 /social         : Profile pictures and cover images per platform
+/fonts          : Brand typefaces (open-licensed) and typography.css
 /misc           : Any other brand assets
 ```
 
