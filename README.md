@@ -12,6 +12,7 @@ This repository is the single source of truth for all Faytuks Network assets. If
 /icons          : Favicons and app icons
 /social         : Profile pictures and cover images per platform
 /fonts          : Brand typefaces (open-licensed) and typography.css
+/colors         : Brand palette, light/dark tokens (colors.css, colors.tokens.json)
 /misc           : Any other brand assets
 ```
 

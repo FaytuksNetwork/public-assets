@@ -18,6 +18,10 @@ Every file in this repository, where it came from, and what it is. Update this f
 | `fonts/inter/OFL.txt` | `LICENSE.txt` | | Text | SIL Open Font License 1.1 for Inter. |
 | `fonts/jetbrains-mono/JetBrainsMono-Variable.woff2`, `-Variable-Italic.woff2`, `.ttf` | `JetBrainsMono-2.304.zip` (official release) | variable, wght 100–800 | WOFF2 / TTF | Label and data font, v2.304. |
 | `fonts/jetbrains-mono/OFL.txt` | `OFL.txt` | | Text | SIL Open Font License 1.1 for JetBrains Mono. |
+| `colors/README.md` | (new) | | Markdown | Palette, semantic light/dark tokens, text tones, dark-mode usage, WCAG contrast check. |
+| `colors/colors.css` | (new) | | CSS | Brand, text-tone and semantic CSS variables. Light is the default; dark applies via `prefers-color-scheme` or `data-theme="dark"`. |
+| `colors/colors.tokens.json` | (new) | | JSON | The same tokens in the W3C Design Tokens format. |
+| `colors/color-palette-swatches.png` | (new) | 2992 × 1858 | PNG | Swatches plus light and dark example cards, rendered from `colors.css`. |
 
 ## Excluded
 
@@ -30,9 +34,9 @@ The main graphics archive (`Faytuks_Graphics-2.zip`, ~170 files) is **not part o
 - **Only one vector file exists.** `faytuks-mark-white-yellow.svg` is the only SVG. Every other logo is raster.
 - **Missing logo variants:** no navy/dark-on-light logo, no single-color (mono) version, and no favicon or app icons (`/icons` is empty).
 - **No full-logo or wordmark vector.** The SVG is the mark only, without "FAYTUKS NETWORK".
-- **Yellow conflict:** the logo uses `#FED506`, but the brand color is specified as `#FFD700`. Undecided, so the file has not been changed.
+- **Gold differs from Figma.** Gold is the logo yellow `#FED506` in `/colors`, but the Figma branding file still shows `#FFD700`. Figma should be updated to match.
 - **Two versions of the mark exist.** In the raster "Dark" logo the N's diagonal runs unbroken behind the eye. In the SVG the diagonal is cut where the eye sits. Someone needs to decide which is official.
-- **No dark-mode color tokens** in the brand system.
+- **Dark-mode `text/brand` fails contrast.** `#1B43B6` on navy is 2.2 : 1 (WCAG AA needs 4.5 : 1). Suggested fix: `#759BFF`. Dark-mode text tones are also not defined yet.
 - **Headline font differs from the guide sheets.** Object Sans (paid web licence) has been replaced by the free font Onest in `/fonts`, but the v2.0 guide sheets still show Object Sans. Weights and letter-spacing in the type scale were matched by eye.
 - **Type scale is incomplete.** The typography sheet says "17 styles" but shows only 13.
 - **No web BREAKING badge style.** The brand guide shows LIVE and ON AIR badges, but not BREAKING.

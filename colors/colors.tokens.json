@@ -1,0 +1,173 @@
+{
+  "$description": "Faytuks Network colors, Brand System v2.0. W3C Design Tokens format. Gold is the logo yellow #FED506.",
+  "primitive": {
+    "blue-primary": {
+      "$type": "color",
+      "$value": "#1D4ED8",
+      "$description": "Blue Primary"
+    },
+    "blue-secondary": {
+      "$type": "color",
+      "$value": "#1B43B6",
+      "$description": "Blue Secondary"
+    },
+    "blue-light": {
+      "$type": "color",
+      "$value": "#759BFF",
+      "$description": "Blue Light"
+    },
+    "gold": {
+      "$type": "color",
+      "$value": "#FED506",
+      "$description": "Gold (logo yellow)"
+    },
+    "white": {
+      "$type": "color",
+      "$value": "#FCFDFF",
+      "$description": "White"
+    },
+    "navy": {
+      "$type": "color",
+      "$value": "#00113E",
+      "$description": "Navy"
+    },
+    "pure-white": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "$description": "Pure white, text on blue only"
+    }
+  },
+  "text-tone": {
+    "secondary": {
+      "$type": "color",
+      "$value": "#14336B",
+      "$description": "Light-mode text tone"
+    },
+    "subtle": {
+      "$type": "color",
+      "$value": "#4B6FA8",
+      "$description": "Light-mode text tone"
+    },
+    "disabled": {
+      "$type": "color",
+      "$value": "#9BAFC9",
+      "$description": "Light-mode text tone"
+    }
+  },
+  "light": {
+    "bg": {
+      "default": {
+        "$type": "color",
+        "$value": "{primitive.white}",
+        "$description": "Canvas, page backgrounds"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{primitive.blue-primary}",
+        "$description": "Primary CTA, active states"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "{primitive.gold}",
+        "$description": "Gold highlights, accent badges"
+      }
+    },
+    "text": {
+      "default": {
+        "$type": "color",
+        "$value": "{primitive.navy}",
+        "$description": "Body copy, primary labels"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "{primitive.blue-secondary}",
+        "$description": "Secondary labels, captions"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{primitive.blue-primary}",
+        "$description": "Links, brand text emphasis"
+      },
+      "on-brand": {
+        "$type": "color",
+        "$value": "{primitive.pure-white}",
+        "$description": "Text on blue backgrounds"
+      },
+      "on-accent": {
+        "$type": "color",
+        "$value": "{primitive.navy}",
+        "$description": "Text on gold/accent backgrounds"
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{primitive.blue-light}",
+        "$description": "Dividers, card outlines"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{primitive.blue-primary}",
+        "$description": "Focus rings, active borders"
+      }
+    }
+  },
+  "dark": {
+    "bg": {
+      "default": {
+        "$type": "color",
+        "$value": "{primitive.navy}",
+        "$description": "Canvas, page backgrounds"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{primitive.blue-primary}",
+        "$description": "Primary CTA, active states"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "{primitive.gold}",
+        "$description": "Gold highlights, accent badges"
+      }
+    },
+    "text": {
+      "default": {
+        "$type": "color",
+        "$value": "{primitive.white}",
+        "$description": "Body copy, primary labels"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "{primitive.blue-light}",
+        "$description": "Secondary labels, captions"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{primitive.blue-secondary}",
+        "$description": "Links, brand text emphasis"
+      },
+      "on-brand": {
+        "$type": "color",
+        "$value": "{primitive.pure-white}",
+        "$description": "Text on blue backgrounds"
+      },
+      "on-accent": {
+        "$type": "color",
+        "$value": "{primitive.navy}",
+        "$description": "Text on gold/accent backgrounds"
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{primitive.blue-secondary}",
+        "$description": "Dividers, card outlines"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{primitive.blue-primary}",
+        "$description": "Focus rings, active borders"
+      }
+    }
+  }
+}
