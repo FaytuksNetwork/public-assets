@@ -1,0 +1,65 @@
+/*
+ * Faytuks Network colors (Brand System v2.0)
+ *
+ * Source: the "Foundations / Color" page of the Figma branding file.
+ * One change from Figma: Gold is the logo yellow #FED506, not #FFD700.
+ *
+ * Light mode is the default. Dark mode applies:
+ *   - automatically when the visitor's system is set to dark, unless the page sets data-theme="light"
+ *   - always when the page sets data-theme="dark" on <html>
+ */
+
+:root {
+  /* ---------- Brand primitives ---------- */
+  --color-blue-primary:   #1D4ED8;
+  --color-blue-secondary: #1B43B6;
+  --color-blue-light:     #759BFF;
+  --color-gold:           #FED506;
+  --color-white:          #FCFDFF;
+  --color-navy:           #00113E;
+  --color-pure-white:     #FFFFFF; /* used only for text on blue */
+
+  /* ---------- Text tones (light mode, dark → light) ---------- */
+  --color-text-secondary: #14336B;
+  --color-text-subtle:    #4B6FA8;
+  --color-text-disabled:  #9BAFC9;
+
+  /* ---------- Semantic tokens: light ---------- */
+  --color-bg-default:      var(--color-white);
+  --color-bg-brand:        var(--color-blue-primary);
+  --color-bg-accent:       var(--color-gold);
+  --color-text-default:    var(--color-navy);
+  --color-text-muted:      var(--color-blue-secondary);
+  --color-text-brand:      var(--color-blue-primary);
+  --color-text-on-brand:   var(--color-pure-white);
+  --color-text-on-accent:  var(--color-navy);
+  --color-border-default:  var(--color-blue-light);
+  --color-border-brand:    var(--color-blue-primary);
+
+  color-scheme: light;
+}
+
+/* ---------- Semantic tokens: dark ---------- */
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg-default:      var(--color-navy);
+    --color-text-default:    var(--color-white);
+    --color-text-muted:      var(--color-blue-light);
+    --color-text-brand:      var(--color-blue-secondary); /* 2.2:1 on navy, fails WCAG AA; see colors/README.md */
+    --color-border-default:  var(--color-blue-secondary);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-bg-default:      var(--color-navy);
+  --color-text-default:    var(--color-white);
+  --color-text-muted:      var(--color-blue-light);
+  --color-text-brand:      var(--color-blue-secondary); /* 2.2:1 on navy, fails WCAG AA; see colors/README.md */
+  --color-border-default:  var(--color-blue-secondary);
+  color-scheme: dark;
+}
+
+/* The tokens left out of the dark blocks above (bg/brand, bg/accent, text/on-brand,
+   text/on-accent, border/brand) are the same in both modes. */
